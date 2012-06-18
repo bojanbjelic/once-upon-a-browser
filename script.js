@@ -1,1 +1,9 @@
-Array.prototype.slice.call(document.getElementsByTagName('body')[0].getElementsByTagName('*')).forEach(function(el){el.style['-webkit-transform']='rotate('+(Math.random()*120)+'deg)' });
+Array.prototype.slice.call(
+    document.getElementsByTagName('body')[0].getElementsByTagName('*')
+).forEach(function(el){
+    ['-webkit-transform','-ms-transform','transform','MozTransform'].forEach(function(s){
+        if (el.style[s]!=undefined) {
+            el.style[s]='rotate('+(Math.random()*120)+'deg)'
+        }
+    })
+})
