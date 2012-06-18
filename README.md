@@ -7,4 +7,4 @@ Based on the idea presented in the article [Spinning the Web](http://meyerweb.co
 
 Here is Eric's [Flickr set](http://www.flickr.com/photos/meyerweb/sets/72157626750845115/with/5793617592/), and [here's mine](http://www.flickr.com/photos/bojanbjelic/sets/72157630173696042/).
 
-[bkmrklt]: <javascript:Array.prototype.slice.call( document.getElementsByTagName('body')[0].getElementsByTagName('*') ).forEach(function(el){ ['-webkit-transform','-ms-transform','transform','MozTransform'].forEach(function(s){ if (el.style[s]!=undefined) { el.style[s]='rotate('+(Math.random()*120)+'deg)' } }) })>
+[bkmrklt]:<javascript:Array.prototype.slice.call(document.getElementsByTagName('body')[0].getElementsByTagName('*')).forEach(function(el){['-webkit-transform','-ms-transform','transform','MozTransform'].forEach(function(s){if(el.style[s]!=undefined){el.style[s]='rotate('+(Math.random()*120)+'deg)'}})})>
