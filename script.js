@@ -5,5 +5,10 @@ Array.prototype.slice.call(
         if (el.style[s]!=undefined) {
             el.style[s]='rotate('+(Math.random()*120)+'deg)'
         }
+    });
+    ['-webkit-transition','-ms-transition','transition','MozTransition'].forEach(function(s){
+        if (el.style[s]!=undefined) {
+            el.style[s]='all 1.5s ease-in-out'
+        }
     })
 })
